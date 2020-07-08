@@ -1,0 +1,5 @@
+#pragma once
+
+#define MAKECODE(Function,Access) (CTL_CODE(FILE_DEVICE_UNKNOWN,Function,METHOD_BUFFERED, Access))
+
+#define READ_DATA MAKECODE(0xC00,FILE_READ_ACCESS)
